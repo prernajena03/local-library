@@ -14,8 +14,8 @@ var app = express();
 var mongoose = require('mongoose');
 
 //Set up default mongoose connection
-var mongoDB = 'mongodb+srv://prernajena:<aditya@22>@cluster0-kunhf.azure.mongodb.net/local_library?retryWrites=true&w=majority';
-mongoose.connect(mongoDB, { useNewUrlParser: true });
+var mongoDB = 'mongodb+srv://prernajena:fe0zRgE66gjg5VEH@cluster0-kunhf.azure.mongodb.net/test?retryWrites=true&w=majority';
+mongoose.connect(mongoDB, { useNewUrlParser: true,useUnifiedTopology: true });
 
 //Get the default connection
 var db = mongoose.connection;
